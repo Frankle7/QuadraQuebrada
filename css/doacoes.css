@@ -1,0 +1,586 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  main {
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    font-family: "roboto";
+  }
+  
+  header {
+    width: 100%;
+    height: 60px;
+    /* background-color: blue; */
+    margin-bottom: 5px;
+    background-image: url("../imagem/header.jpg");
+  }
+  
+  @font-face {
+    font-family: roboto;
+    src: url(fonte/Roboto/Roboto-Black.ttf);
+  }
+  
+  @font-face {
+    font-family: roboto-normal;
+    src: url(fonte/Roboto/Roboto-Medium.ttf);
+  }
+  
+  #logo-links {
+    width: 100%;
+    height: auto;
+  }
+  
+  #LogoDoSite {
+    position: relative;
+    float: left;
+    width: auto;
+    height: auto;
+    margin-right: 270px;
+    padding-left: 105px;
+  }
+  
+  /* Estilos gerais */
+  hr {
+    width: 100%;
+    height: 2px;
+    background-color: #ff4500;
+    margin-bottom: 10px;
+  
+  }
+  
+  .titulo {
+    color: #FF4500;
+    font-family: "Roboco", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-left: 100px;
+  }
+  
+  
+  /* MENU */
+  
+  #linksMenuPrincipal {
+    position: relative;
+    float: left;
+    height: auto;
+    padding-top: 20px;
+  }
+  
+  #linksMenuPrincipal ul {
+    padding: 0;
+    line-height: 30px;
+  }
+  
+  #linksMenuPrincipal li {
+    list-style: none;
+    float: left;
+    position: relative;
+  
+  }
+  
+  #linksMenuPrincipal ul li a {
+    text-align: center;
+    height: 30px;
+    width: 90px;
+    display: block;
+    color: #FF4500;
+    text-decoration: none;
+    font-size: 15px;
+    /* font-family: "Roboco", sans-serif; */
+    font-family: "roboto";
+    font-weight: bold;
+  }
+  
+  #linksMenuPrincipal ul ul {
+    position: absolute;
+    visibility: hidden;
+    top: 32px;
+    background-color: #b79589;
+  }
+  
+  #linksMenuPrincipal ul li:hover ul {
+    visibility: visible;
+    z-index: 9999;
+    color: white;
+  }
+  
+  #linksMenuPrincipal li:hover {
+    transition: all 1s;
+    background-color: #FF4500;
+  }
+  
+  #linksMenuPrincipal li a:hover {
+    color: white;
+  }
+  
+  #linksMenuPrincipal ul li:hover ul li a:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  br {
+    clear: both;
+  }
+  
+  #linksMenuPrincipal ul li {
+    display: inline;
+  
+  }
+  
+  #div-perfilicon {
+    position: absolute;
+    top: 76px;
+    left: 1200px;
+    width: 52px;
+    height: 52px;
+  }
+  
+  #div-perfilicon img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #bg{
+    background-image: url(/imagem/doacoes.imagem.png);
+    width: 100%;
+    height: 169px;
+    
+  }
+
+  #primeiraDoacoes{
+    background-color: #D9D9D9;
+    color: black;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    font-family: "roboto-normal";
+    font-size: 26px;
+
+  }
+  #primeiraDoacoes p{
+    /* background-color: aqua; */
+    width: 700px;
+    text-align: center;
+   position: relative;
+   left: 25%;
+   top: 50px;
+   font-family: "roboto-normal";
+  }
+
+
+
+
+  #segundaDoacoes{
+    width: 100%;
+    height: 450px;
+    /* background-color: blue; */
+    float: left;
+  }
+  #segundaDoacoes h1{
+    width: 700px;
+    text-align: center;
+   position: relative;
+   left: 20%;
+   top: 60px;
+   font-family: "roboto-normal";
+   font-size: 44px;
+   color: #FF4500;
+   /* position: fixed; */
+  }
+  .caixa{
+    width: 70%;
+    height: 150px;
+    /* background-color: rgb(43, 255, 0); */
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 135px;
+  }
+  .caixa div{
+    margin-right: 30px;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+
+  #caixa1{
+    background-color: #FF4500;
+    width: 200px;
+    height: 86px;
+    float: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+  
+  }
+  #caixa2{
+    background-color: #FF4500;
+    width: 200px;
+    height: 86px;
+    float: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  
+  #caixa3{
+    background-color: #FF4500;
+    width: 200px;
+    height: 86px;
+float: left;
+position: relative;
+display: flex;
+justify-content: center;
+color: white;
+  } 
+
+  #terceiraDoacaoes{
+    width: 90%;
+    height: 614px;
+    margin: auto;
+    /* background-color: red; */
+    top: 500px;
+    clear: left;
+  }
+  #titulo-terceira{
+    height: 72px;
+     background-color:#666666;
+     
+    
+
+  }
+  #titulo-terceira h2{
+    color: white;
+    font-size: 30px;
+    font-family: 'roboto-normal';
+    text-align: center;
+   padding-top: 20px;
+  }
+
+
+  #txt-div-terceira{
+    width:700px ;
+    height: 150px;
+    /* background-color: aqua; */
+    margin-left: 178px;
+    margin-top:20px ;
+  }
+
+  #txt-div-terceira p{
+ 
+   text-align: center;
+   font-size: 22px;
+   font-family: 'roboto-normal';
+  }
+/*------------------------------------*/
+#container-form{
+  /* background-color: rgb(236, 213, 213); */
+  /* border: black; */
+  height: 100px;
+  text-align: center;
+  position: relative;
+  top: 15px;
+
+}
+  .Label {
+    margin-left: 85px;
+    font-family: "Open Sans";
+    margin: auto;
+  }
+
+  .celular{
+    position: relative;
+    bottom: 25px;
+    font-family: "Open Sans";
+    margin: auto;
+  }
+ 
+  #NomeCompleto {
+    background-color: #FF6E1D;
+    color: white;
+    border-radius: 5px;
+    width: 91%;
+    padding: 7px;
+    font-size: 15px;
+  }
+  .Label{
+    position: relative;
+    left: -438px;
+  }
+  
+  #Email {
+    background-color: #FF6E1D;
+    color: white;
+    border-radius: 5px;
+    width: 450px;
+    padding: 7px;
+    font-size: 15px;
+    margin-right: 420px;
+  }
+  .Label p{
+    position: relative;
+    right: 10px;
+    top: 23px;
+  }
+  #celular {
+    position: relative;
+    bottom: 31px;
+    left: 55%;
+    background-color: #FF6E1D;
+    border-radius: 5px;
+    color: white;
+    width: 400px;
+    padding: 7px;
+    font-size: 15px;
+    margin-right: 730px;
+  }
+  .celular{
+    position: relative;
+    right: 359px;
+  }
+  
+  #Descricao {
+    position: relative;
+    left: 1.5%;
+    bottom: 10px;
+    background-color: #FF6E1D;
+    border-radius: 5px;
+    width: 800px;
+    color: white;
+    height: 90px;
+    padding: 7px;
+    font-size: 15px;
+    margin-right: 20px;
+  }
+  .descricao{
+    position: relative;
+    font-family: "Open Sans";
+    bottom: 15px;
+  }
+
+#submit{
+     position: relative;
+     bottom: 77px;
+     left: 358px;
+     background-image: linear-gradient(to right, rgba(243, 112, 37, 0.807), rgb(255, 112, 29));
+     width: 10%;
+     border: none;
+     padding: 15px;
+     color: white;
+     font-size: 15px;
+     cursor: pointer;
+     border-radius: 5px;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right, rgba(233, 86, 0, 0.807), rgb(226, 121, 60));
+}
+
+/*---------------------------------------------*/
+
+#quartaDoacoes{
+  width: 90%;
+  height: 614px;
+  margin: auto;
+  /* background-color: blue; */
+  top: 500px;
+}
+#titulo-quarta h2{
+  height: 72px;
+  background-color:#666666;
+}
+#titulo-quarta h2{
+  color: white;
+    font-size: 30px;
+    font-family: 'roboto-normal';
+    text-align: center;
+   padding-top: 20px;
+}
+
+#p1{
+  text-align: center;
+  margin-top: 50px;
+}
+#p1 p{
+  font-size: 25px;
+font-family: 'roboto-normal';
+
+}
+#p2 {
+  margin-top: 80px;
+  margin-bottom: 40px;
+text-align: center;
+border: #FF4500 solid 2px;
+padding: 25px;
+font-size: 20px;
+}
+
+
+#buttonPix button{
+  width: 50%;
+  margin-top: 80px;
+  margin-left: 300px;
+  background-color: #ff4500;
+  cursor: pointer;
+  border: none;
+  padding: 15px;
+}
+#buttonPix button a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+/* ------------------CASIMRIO ------------------*/
+#contatos{
+  position: relative;
+  top: 10px;
+}
+#localizacoes-p1{
+  width: 95%;
+  position: relative;
+  left: 50px;
+}
+footer {
+  width: 100%;
+  height: auto;
+  /* background-color: rgba(255, 69, 0, 1); */
+  /* text-align: center; */
+  margin: auto;
+  color: white;
+  float: left;
+}
+
+/* DIV A */
+#footerdivA {
+  width: 100%;
+  background-color: #666;
+  color: white;
+  height: auto;
+  font-size: 15px;
+  /* border-bottom: 2px solid black; */
+  float: left;
+}
+
+#footerdivA h1 {
+  padding: 30px 0px;
+  padding-left: 80px;
+  float: left;
+  font-family: "roboto";
+}
+
+/* DIV B */
+#footerdivB {
+  width: 100%;
+  height: auto;
+  background-color: #666;
+  float: left;
+  /* padding-top: 30px; */
+  /* padding-bottom: 50px; */
+}
+
+/* DIV C */
+#footerdivC {
+  width: auto;
+  height: auto;
+  /* background-color: rgba(255,69,0,1); */
+  float: left;
+  padding-left: 70px;
+  margin-right: 110px;
+}
+
+#footerdivC a {
+  background-color: #666;
+  width: 100%;
+  height: auto;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: "roboto-normal";
+  margin-bottom: 16px;
+}
+
+#footerdivC a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+#footerdivC a:active {
+  color: #666;
+  background-color: blue;
+  transition: 0.5s all;
+}
+
+/* DIV D */
+#footerdivD {
+  /* background-color:#666; */
+  width: 280px;
+  height: 150px;
+  float: left;
+  margin-right: 310px;
+}
+
+#footerdivD address {
+  width: 100%;
+  color: white;
+  width: 350px;
+  height: auto;
+  margin-bottom: 15px;
+  /* background-color: rgba(255,69,0,1); */
+  float: left;
+  display: block;
+  font-family: "roboto-normal";
+  position: relative;
+  left: 140px;
+  bottom: 15px;
+}
+
+/* DIV E */
+#footerdivE {
+  position: relative;
+  bottom: 35px;
+  width: auto;
+  /* background-color:rgba(255,69,0,1); */
+  margin: auto;
+  text-align: center;
+  color: white;
+  padding-top: 35px;
+  float: left;
+}
+#footerdivE img{
+  width: 35px;
+  height: 40px;
+
+}
+#footerdivE p {
+  padding-bottom: 40px;
+  font-family: "roboto-normal";
+}
+
+#footerdivF {
+  /* background-color: rgba(255,69,0,1); */
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.footerdivGHI {
+  display: inline-block;
+  /* background-color:rgba(255,69,0,1)a; */
+  width: 53px;
+  height: 62px;
+}
+
+.footerdivGHI img {
+  width: 100%;
+  height: 100%;
+}

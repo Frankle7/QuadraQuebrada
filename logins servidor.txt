@@ -1,0 +1,8 @@
+
+senha: 23072004@Acsa
+nome bd:id19541378_formulario_frankle
+usuario: id19541378_formulario_frankle
+localhost: localhost
+
+almeida@gmail.com
+senha12345

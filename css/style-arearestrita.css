@@ -1,0 +1,749 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+@media print {
+  body * {
+    display: none;
+  }
+  #carteirinha_container, #carteirinha_container * {
+   display: block;
+  } */
+  
+} 
+main {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  font-family: "roboto";
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  /* background-color: blue; */
+  margin-bottom: 5px;
+  background-image: url("../imagem/header.jpg");
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(fonte/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: roboto-normal;
+  src: url(fonte/Roboto/Roboto-Medium.ttf);
+}
+
+#logo-links {
+  width: 100%;
+  height: auto;
+}
+
+#LogoDoSite {
+  position: relative;
+  float: left;
+  width: auto;
+  height: auto;
+  margin-right: 270px;
+  padding-left: 105px;
+}
+
+/* Estilos gerais */
+hr {
+  width: 100%;
+  height: 2px;
+  background-color: #ff4500;
+  margin-bottom: 10px;
+
+}
+
+.titulo {
+  color: #FF4500;
+  font-family: "Roboco", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+
+/* MENU */
+
+
+
+
+#navMenu {
+  position: relative;
+  bottom: 15px;
+  left: 30%;
+  font-size:20px; /*diz que a fonte tem 20 pixels de altura, mas apenas a fonte das listas e não o cabeçalho, ele sabe a diferença por causa do id que demos à lista*/
+}
+
+#navMenu ul { /*isso diz à lista dentro das tags <div> o que fazer*/
+  padding:0; /*dizer ao menu para estar ao lado da borda da página*/
+  line-height:30px; /*diz quanto espaço deve haver entre a parte inferior de uma linha de texto e a parte superior da próxima linha de texto*/
+}
+.img-proff{
+position: relative;
+bottom: 5px;
+right: 7px;
+}
+#navMenu li { /*isso está falando com cada item individual na lista*/
+  list-style:none; /*diz a lista para remover os pontos ao lado de cada item*/
+  float:left; /*diz que os itens da lista estão lado a lado*/
+  position:relative; /*diz aos itens dentro da segunda lista para irem abaixo do item em que está ou então eles passariam pelos outros elementos*/
+  background:rgba(255, 255, 255, 0.7);
+  position: relative;
+  top: 25px;
+  left: 65px;
+  text-decoration: none;
+  width: 45px;
+  height: 50px;
+}
+
+
+
+#navMenu ul ul { /*isso está falando sobre a segunda lista*/
+  position:absolute; /*diz onde estar em relação ao seu pai, se você remover isso atrapalha completamente o posicionamento do menu suspenso*/
+  visibility:hidden; /*diz que a segunda lista deve ser ocultada*/
+  left: -64px;
+  top:32px;/*diz às caixas de listagem onde começar em relação ao topo da caixa de itens da lista, se você alterar isso, certifique-se de alterar a altura do #navMenu ul li a*/
+}
+
+#navMenu ul li:hover /*<--- isso está falando quando você passa o mouse sobre o item da lista*/ ul /*<---isso está dizendo para afetar a segunda lista quando você passa o mouse sobre a primeira lista*/{ 
+  visibility:visible; /*diz para ficar visível*/
+  z-index:9999; /*diz para ir abaixo do item da lista*/
+}
+
+/**********************************************/
+
+#navMenu li:hover { /*dizendo para fazer algo ao passar o mouse*/
+ background:rgba(255, 255, 255, 0.7);
+}
+
+#navMenu ul li:hover ul li a:hover { /*verifica quando você passa o mouse sobre o primeiro item da lista e o segundo item da lista, ou então, se você não passou o mouse sobre a primeira lista, mas estava passando o mouse sobre ela, a segunda lista mudaria*/
+  color:red;
+}
+br {
+  clear:both; /*isso adiciona apenas um pequeno espaço extra entre o final da lista e o topo do conteúdo extra, se isso fosse removido a metade superior da primeira linha estaria na lista quando a lista estivesse visível*/
+}
+
+#navmenu ul li { /* isso ajuda a exibi-lo melhor no Internet Explorer*/
+  display: inline;
+
+}
+
+
+
+
+/* Perfil */
+#div-perfilicon{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 88%;
+  bottom: 60px;
+}
+#perfil {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+#perfil_container {
+  width: auto;
+  height: 520px;
+  /* background-color: #FF871E; */
+  margin-top: 30px;
+  /* margin-left: 105px; */
+  /* padding: 80px; */
+  /* float: left; */
+}
+
+#perfil_bg {
+  width: 500px;
+  height: 200px;
+  /* align-items: center; */
+  margin: auto;
+  position: relative;
+}
+
+#perfil_bg img {
+  width: 100%;
+  height: 100%;
+}
+
+
+#perfil_foto {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 70px;
+  margin: auto;
+  margin-top: -85px;
+}
+#perfil_foto img {
+  width: 100%;
+  height: 100%;
+  border-radius: 70px;
+
+}
+
+#pefil_nome {
+  position: relative;
+  width: 500px;
+  height: auto;
+  background-color: #ff4400;
+  border-radius: 3px;
+  color: #fff;
+  margin: auto;
+  padding-top: 5px;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.perfil_textos {
+  position: relative;
+  width: 400px;
+  /* height: 50px; */
+  /* background-color: rgba(255, 109, 0, 0.6); */
+  margin: auto;
+  margin-top: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+#perfil_sports {
+  margin: auto;
+  /* background-color: blue; */
+  width: 400px;
+  height: 60px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+#perfil_sports div {
+
+  float: left;
+}
+
+#perfil_sports div img {
+  width: 35px;
+  height: 36px;
+  margin: 0 5px;
+}
+
+#perfil_acesso {
+  /* background-color: blue; */
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#perfil_ra {
+  position: relative;
+  float: left;
+  background-color: #FF4500;
+  border-radius: 3px;
+  width: auto;
+  height: 20px;
+  padding: 5px;
+  top: 58px;
+  color: #fff;
+}
+
+#perfil_qrcode img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-left: 70px;
+}
+
+/* CARTEIRINHA */
+#titulo_carterinha {
+  width: 500px;
+  height: 20px;
+  color: #ff4500;
+  position: absolute;
+  left: 720px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+#carteirinha_container {
+  width: 50%;
+  height: 520px;
+  margin-top: 30px;
+  float: left;
+  display: flex;
+
+
+}
+
+#carteirinha_frente {
+  position: absolute;
+  width: 255.91px;
+  height: 357.71px;
+  background: linear-gradient(180.19deg, #FF7D0C 3.06%, #F7F0EA 51.56%, #DFDFDF 100.05%);
+  border: 2px solid #FF7801;
+  border-radius: 30px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  left: 680px;
+  top: 250px;
+}
+
+.divisao{
+  width: 65px;
+  height: 2px;
+  background-color: #FF4500;
+  margin-left: 14px;
+  
+}
+
+
+
+#foto_perfil {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 81px;
+  top: 25px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+#foto_perfil img {
+    width: 200%; /*deixar 100%*/
+    width: 200%; /*deixar 100%*/
+    position: relative; right: 20px; bottom: 25px;
+}
+
+#carterinha_nome {
+  padding: 5px;
+  margin: 10px;
+}
+
+#carterinha_nascimento {
+  padding: 5px;
+  margin: 10px;
+}
+
+#carterinha_ra {
+  padding: 5px;
+  margin: 10px;
+
+}
+
+
+#container_label {
+  position: relative;
+  top: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#carteirinha_verso {
+  position: absolute;
+  width: 255.91px;
+  height: 357.71px;
+  border-radius: 10px;
+  border: #FF4500 solid 3px;
+  background: linear-gradient(178.83deg, #FF871E 6.16%, #F1ECE7 43.16%);
+  border-radius: 30px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  left: 980px;
+  top: 250px;
+}
+#qrcdd{
+  position: relative;
+  left: 390px;
+  top: 340px;
+}
+#print{
+  position: relative;
+  width: 65px;
+  height: 30px;
+  font-size: 16px;
+  color: white;
+  left: 320px;
+  top: 510px;
+  cursor: pointer;
+}
+
+/* SECTION FOR */
+
+#section-formularios hr {
+  position: relative;
+  bottom: 20px;
+}
+#section-formularios {
+  /* background-color: blue; */
+  width: 100%;
+  height: 300px;
+  margin-top: 45px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+#section-formularios h1 {
+  margin-bottom: 30px;
+  font-family: "roboto";
+  font-size: 18px;
+  color: #ff4400;
+  
+}
+.TamanhoFonte{
+  font-family: "Open Sans";
+}
+#masc, #Fem, #outr, #nmae{
+  font-family: "Open Sans";
+}
+#nmae{
+  position: relative;
+  left: -115px;
+}
+.Label {
+  margin-left: 85px;
+  font-family: "Open Sans";
+  margin: auto;
+}
+.LabelCell{
+  position: relative;
+  bottom: 26px;
+  font-family: "Open Sans";
+  margin: auto;
+}
+.password{
+  position: relative;
+  bottom: 25px;
+  font-family: "Open Sans";
+  margin: auto;
+}
+.nom-maee {
+  position: relative;
+  right: 50px;
+  bottom: 103px;
+  font-family: "Open Sans";
+  margin: auto;
+}
+#NomeCompleto {
+  background-color: #FF6E1D;
+  border-radius: 5px;
+  width: 91%;
+  padding: 7px;
+  font-size: 15px;
+}
+
+#Email {
+  background-color: #FF6E1D;
+  border-radius: 5px;
+  width: 630px;
+  padding: 7px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+#Senha {
+  position: relative;
+  bottom: 31px;
+  left: 55%;
+  background-color: #FF6E1D;
+  border-radius: 5px;
+  width: 439px;
+  padding: 7px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+#Telefone {
+  background-color: #FF6E1D;
+  border-radius: 5px;
+  width: 630px;
+  padding: 7px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+#Celular {
+  position: relative;
+  left: 55%;
+  bottom: 31px;
+  background-color: #FF6E1D;
+  border-radius: 5px;
+  width: 439px;
+  padding: 7px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+#formulario-Radio {
+  width: 200px;
+  height: auto;
+  /* background-color: red; */
+  float: left;
+  margin-right: 370px;
+}
+
+#NomeMae {
+  position: relative;
+  left: 37.5%;
+  bottom: 140px;
+  background-color: #FF6E1D;
+  border-radius: 5px;
+  width: 650px;
+  padding: 7px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+/* SESSAO3 */
+
+#sessao3 {
+  /* background-color: red; */
+  position: relative;
+  top: 15px;
+  width: 100%;
+  height: auto;
+}
+
+.titulos-ModalidadeCursos {
+  width: 100%;
+  height: 40px;
+  display: flex;
+}
+.titulos-ModalidadeCursos h2{
+  font-family: "Roboto";
+  font-size: 19px;
+  font-style: regular;
+  color: orangered;
+  position: relative;
+  right: 44px;
+}
+.titulos-ModalidadeCursos div {
+  width: 50%;
+  height: auto;
+  padding-left: 200px;
+  /* background-color: blue; */
+  padding-bottom: 40px;
+}
+
+.botoes-ModalidadeCursos{
+  /* background-color: red; */
+  margin-left: 70px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  
+}
+
+.botoes-ModalidadeCursos div{
+  width: 50%;
+  height: auto;
+  /* background-color: blue; */
+  margin: 0px 80px;
+}
+
+.botoes-ModalidadeCursos input{
+  padding: 15px;
+  /* background-color: aqua; */
+  border-radius: 5px;
+  margin: 5px;
+}
+
+#botao-1{
+  background-color:#6bd1ff ;
+}
+
+#botao-2{
+  background-color: #dc6ebe;
+}
+
+#botao-3{
+  background-color: #00c86f;
+}
+
+#botao-4{
+  background-color:#f16165 ;
+}
+
+#botao-5{
+  background-color: #ff8c2a;
+}
+
+#botao-6{
+  background-color: #ffba05;
+}
+
+#botao-7{
+  background-color: #9cd33b;
+}
+
+#botao-8{
+  background-color:#6bd1ff ;
+}
+
+#botao-9{
+  background-color: #dc6ebe;
+}
+
+#botao-10{
+  background-color: #00c86f;
+}
+
+#botao-11{
+  background-color:#f16165 ;
+}
+
+#botao-12{
+  background-color: #ff8c2a;
+}
+
+#botao-13{
+  background-color: #ffba05;
+}
+
+#botao-14{
+  background-color: #9cd33b;
+}
+/* FOOTER */
+
+footer {
+  width: 100%;
+  height: auto;
+  /* background-color: rgba(255, 69, 0, 1); */
+  /* text-align: center; */
+  margin: auto;
+  color: white;
+  float: left;
+}
+
+/* DIV A */
+#footerdivA {
+  width: 100%;
+  background-color: #666;
+  color: white;
+  height: auto;
+  font-size: 15px;
+  /* border-bottom: 2px solid black; */
+  float: left;
+}
+
+#footerdivA h1 {
+  padding: 30px 0px;
+  padding-left: 80px;
+  float: left;
+  font-family: "roboto";
+}
+
+/* DIV B */
+#footerdivB {
+  width: 100%;
+  height: auto;
+  background-color: #666;
+  float: left;
+  /* padding-top: 30px; */
+  /* padding-bottom: 50px; */
+}
+
+/* DIV C */
+#footerdivC {
+  width: auto;
+  height: auto;
+  /* background-color: rgba(255,69,0,1); */
+  float: left;
+  padding-left: 70px;
+  margin-right: 110px;
+}
+
+#footerdivC a {
+  background-color: #666;
+  width: 100%;
+  height: auto;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: "roboto-normal";
+  margin-bottom: 16px;
+}
+
+#footerdivC a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+#footerdivC a:active {
+  color: #666;
+  background-color: blue;
+  transition: 0.5s all;
+}
+
+/* DIV D */
+#footerdivD {
+  /* background-color:#666; */
+  width: 280px;
+  height: 150px;
+  float: left;
+  margin-right: 310px;
+}
+
+#footerdivD address {
+  width: 100%;
+  color: white;
+  height: auto;
+  margin-bottom: 15px;
+  /* background-color: rgba(255,69,0,1); */
+  float: left;
+  display: block;
+  font-family: "roboto-normal";
+}
+
+/* DIV E */
+#footerdivE {
+  width: auto;
+  /* background-color:rgba(255,69,0,1); */
+  margin: auto;
+  text-align: center;
+  color: white;
+  padding-top: 35px;
+  float: left;
+}
+
+#footerdivE p {
+  padding-bottom: 40px;
+  font-family: "roboto-normal";
+}
+
+#footerdivF {
+  /* background-color: rgba(255,69,0,1); */
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.footerdivGHI {
+  display: inline-block;
+  /* background-color:rgba(255,69,0,1)a; */
+  width: 53px;
+  height: 62px;
+}
+
+.footerdivGHI img {
+  width: 100%;
+  height: 100%;
+}

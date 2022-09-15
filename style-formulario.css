@@ -1,0 +1,130 @@
+body{
+    width: 90%;
+    height: 100px;
+    font-family: Arial;
+    /* background-color: #FF6E1D; */
+    background-image: linear-gradient(to right, rgba(243, 112, 37, 0.807), rgb(255, 112, 29));
+}
+
+.container-close{
+    position: relative;
+    /* left: 150px; */
+}
+
+img{
+    position: fixed;
+    width: 50%;
+    height: 70%;
+    left: 5%;
+    top: 100px;
+    float: left;
+} 
+
+#carteirinha{
+    display: flex;
+} 
+
+.box{
+    position: fixed;
+    top: 3;
+    right: 5%; 
+    width: 25%;
+    /* min-width: 28%;
+    max-width: 28%;; */
+    background-color: rgba(199, 76, 9, 0.992);
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+}
+
+@keyframes modal {
+    from{
+        opacity: 0;
+        transition: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transition: translate3d(0, 0px, 0);
+    }
+}
+.mostrar .modal{
+    animation: modal .3s;
+}
+fieldset{
+    border: 3px solid rgb(255, 112, 29);
+}
+
+legend{
+    border: 1px solid rgb(255, 112, 29);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(255, 112, 29);
+    border-radius: 8px;
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;/*espaço entre caracter*/
+}
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none; /*qualquer lugar dentro do iput vai executar ação*/
+    transition: .5px;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: rgb(255, 112, 29);
+}
+
+#data_nasc{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit{
+    background-image: linear-gradient(to right, rgba(243, 112, 37, 0.807), rgb(255, 112, 29));
+    width: 100%;
+     border: none;
+     padding: 15px;
+     color: white;
+     font-size: 15px;
+     cursor: pointer;
+     border-radius: 10px;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right, rgba(233, 86, 0, 0.807), rgb(226, 121, 60));
+}
+.fechar{
+    position: absolute;
+    top: 0;
+    right: -80px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    background-color: rgb(226, 121, 60);
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+/*******************************************************************/
